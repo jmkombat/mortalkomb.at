@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img {
+            cursor: pointer;
+        }
+    </style>
+    <title>Your Page Title</title>
+</head>
+<body>
+    <img id="image" src="img/mklogo.png" onclick="playSound()">
+
+    <audio id="sound" src="snd/mk_excellent.mp3"></audio>
+
+    <script>
+        function playSound() {
+            document.getElementById('sound').play();
+        }
+    </script>
+</body>
+</html>
